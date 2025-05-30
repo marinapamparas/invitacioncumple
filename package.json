@@ -1,8 +1,0 @@
-{
-    "name": "mi-sitio-estatico",
-    "version": "1.0.0",
-    "scripts": {
-      "dev": "live-server public",
-      "start": "echo 'Subí esto a Vercel y listo 😎'"
-    }
-  }
