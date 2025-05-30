@@ -1,9 +1,8 @@
 {
- "scripts": {
-  "build": "mkdir -p dist && cp -r public/* dist && cp -r src dist/src"
- },
- "dependencies": {
-  "aos": "^2.3.4",
-  "live-server": "^1.2.2"
- }
-}
+    "name": "mi-sitio-estatico",
+    "version": "1.0.0",
+    "scripts": {
+      "dev": "live-server public",
+      "start": "echo 'Subí esto a Vercel y listo 😎'"
+    }
+  }
