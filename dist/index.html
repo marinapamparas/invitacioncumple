@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Parkinsans:wght@300..800&display=swap&family=Sevillana&display=swap&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <title>💍Casamiento Mar y Eze</title>
+    <link rel="stylesheet" href="../src/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <section class="container fondo1">
+    
+        <div class="presentacion">
+            <h1 class="titulo">Marina <span class="ampersand"><br>&<br></span>Ezequiel</h1>
+            <h2 class="nuestraboda">Nuestra boda ♥</h2>
+        </div>
+        
+        
+    </section>
+    <section class="container2">
+        <div style="text-align: center;" class="divCivilFiesta" data-aos="zoom-in-right" data-aos-duration="1000">
+            <img src="../src/assets/civilicon.png" alt="Icono Civil" class="icons">
+            <h3 class="titleCivilFiesta">El civil</h3>
+            <p class="pCivilFiesta">Fecha y hora a confirmar</p>
+            <a href="https://www.google.com/maps/place/Delegación+Registro+Provincial+de+las+Personas+-+Centralización+Defensa+de+La+Plata/@-34.9141332,-57.937839,17z" target="_blank" style="text-decoration: none;">
+                <button class="boton-verde">VER MAPA</button>
+            </a>
+              
+        </div>
+
+        <div style="text-align: center;" class="divCivilFiesta" data-aos="zoom-in-left" data-aos-duration="1000">
+            <img src="../src/assets/partyicon.png" alt="Icono Fiesta" class="icons">
+            <h3 class="titleCivilFiesta">La fiesta</h3>
+            <p class="pCivilFiesta">8 de Marzo de 2025</p>
+            <p class="pCivilFiesta">18 hs</p>
+            <p class="pCivilFiesta">491 esq 132</p>
+            <a href="https://www.google.com/maps/place/Calle+132+%26+Calle+491,+Gonnet,+Provincia+de+Buenos+Aires/@-34.8984212,-58.0342018,15z" target="_blank" style="text-decoration: none;">
+                <button class="boton-verde">VER MAPA</button>
+            </a>
+        </div>
+
+    </section>
+    <section class="container fondo2">
+        <h3 class="confirma">CONFIRMA TU ASISTENCIA A LA FIESTA</h3>
+        <p class="confirmap">Antes del 08/02</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdkMQh6VxNhya-X_8-rVG1cKOKPD9HQoQU4tP_2zphX-yWHFQ/viewform?embedded=true" target="_blank" style="text-decoration: none;">
+            <button class="boton-verde">ACÁ</button>
+        </a>
+    </section>
+    <section class="container margin" data-aos="zoom-in" data-aos-duration="1000">
+        <img src="../src/assets/gifticon.png" alt="Icono Regalo" class="icons">
+        <p class="pregalo">El mejor regalo para nosotros es tu presencia, pero si queres hacernos un regalo más, podes hacer click en el siguiente botón</p>
+        <button class="boton-verde" id="openModalBtn">VER INFORMACIÓN</button>
+    </section>
+
+    <!-- Popup Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModalBtn">&times;</span>
+            <h2>Datos bancarios</h2>
+            <p><strong>Banco:</strong> Banco XYZ</p>
+            <p><strong>Cuenta:</strong> 1234567890</p>
+            <p><strong>CBU:</strong> 0000001234567890123456</p>
+            <p><strong>Alias:</strong> alias@banco.xyz</p>
+            
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        // El código JavaScript para desactivar la animación de AOS
+        function handleAnimation() {
+            const divCivilFiesta = document.querySelectorAll('.divCivilFiesta');
+            
+            if (window.innerWidth >= 1000) {
+                divCivilFiesta.removeAttribute('data-aos'); // Desactiva la animación
+            } else {
+                divCivilFiesta.setAttribute('data-aos', 'zoom-in-left'); // Activa la animación
+            }
+        }
+    
+        window.addEventListener('resize', handleAnimation); // Cambiar cuando se redimensiona la ventana
+        window.addEventListener('load', handleAnimation); // Cambiar al cargar la página
+    </script>
+    <script src="../src/index.js"></script>
+</body>
+</html>
