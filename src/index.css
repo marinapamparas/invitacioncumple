@@ -4,6 +4,8 @@ body {
     font-weight: 500;
     margin: 0;
     padding: 0;
+    background: rgb(19, 19, 67);
+    color: white;
 }
 /* 
 .container{
@@ -35,7 +37,7 @@ body {
     height: 40%;
 }
 
-.fondo1{
+/* .fondo1{
     background-image: url('./assets/901684588b9113791451deaae51bea24.jpg');
     background-size: cover;
     background-position: center;
@@ -48,7 +50,7 @@ body {
     background-position: center;
     height: 300px;
     margin: 10% 0 10% 0;
-}
+} */
 
 .presentacion{
     display: flex;
@@ -63,22 +65,34 @@ body {
     font-family: "Parisienne", cursive;
     /* font-family: "Playwrite HR Lijeva", cursive; */
     font-weight: 400;
-    font-size: 3rem;
-    color: rgb(34, 79, 21);
-    
+}
+
+.nombre{
+    font-family: "Parisienne", cursive;
+    /* font-family: "Playwrite HR Lijeva", cursive; */
+    font-weight: 400;
+    font-size: 100px;
+    margin: 30px 0 10px;
+    background: linear-gradient(316deg, #e7cf9a, #d3c29f 50%, #dfbc6b, #c39731);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.teinvito{
+    font-size: 42px;
+    background: linear-gradient(316deg, #e7cf9a, #cabea6 50%, #f4d792, #cba346);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-radius: 8px;
+    padding: 2px;
+}
+.contenedorImg img{
+    border-radius: 100px;
+    border: solid 4px white;
 }
 
 .ampersand {
     font-size: 1.8rem; /* Tamaño más pequeño para la & */
-    color: rgb(34, 79, 21); /* Color opcional (más claro, por ejemplo) */
-}
-
-.nuestraboda{
-    font-family: "Montserrat";
-    font-weight: 500;
-    font-size: 1rem;
-    color: rgb(34, 79, 21);
-    /* font-style: italic; */
+   
 }
 
 .confirma{
@@ -86,11 +100,9 @@ body {
     font-family: "Montserrat";
     font-weight: 500;
     margin: 12% 8% 4% 8%;
-    color: rgb(34, 79, 21);
     font-size: 1.3rem;
 }
 .confirmap{
-    color: rgb(34, 79, 21);
     font-family: "Montserrat";
     font-weight: 300;
     margin: 0 0 6% 0;
@@ -98,41 +110,29 @@ body {
 
 }
 .divCivilFiesta{
-    margin-top: 8%;
+    
     font-family: "Montserrat";
     font-weight: 500;
 }
 .titleCivilFiesta{
     font-family: "Montserrat";
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.5rem;
-    color: rgb(34, 79, 21);
+
 }
 .pCivilFiesta{
     font-family: "Montserrat";
-    font-weight: 300;
-    font-size: 1rem;
-    color: rgb(34, 79, 21);
+    font-weight: 400;
+    font-size: 1.3rem;
+    
 }
 .icons{
-    width: 120px;
+    width: 180px;
     height: 120px;
-}
-.pregalo{
-    font-family: "Montserrat";
-    font-weight: 300;
-    color: rgb(34, 79, 21);
-    margin: 0 8% 5% 8%;
+    margin: 15px 0 20px;
 }
 
-.pdescripcion{
-    font-family: "Montserrat";
-    font-weight: 300;
-    color: rgb(34, 79, 21);
-    margin: 0 8% 5% 8%;
-    padding: 10% 10% 5% 10%;
-    text-align: center;
-}
+
 .margin{
     margin: 0 0 15% 0;
 }
@@ -149,104 +149,21 @@ body {
     background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro transparente */
 }
 
-/* Contenido del modal */
-.modal-content {
-    background-image: url("./assets/banco.jpg");
-    margin: 15% auto;
-    padding: 22% 2% 20% 2%;
-    border: 1px solid #888;
-    width: 80%; /* Puedes ajustar el tamaño según tus necesidades */
-    max-width: 500px;
-    text-align: center;
-    position: relative; /* Necesario para que la "X" esté posicionada correctamente */
-}
-
-/* Botón para cerrar el modal */
-.close-btn {
-    color: #cd8e36;
-    font-size: 70px;
-    /* font-weight: bold; */
-    position: absolute; /* Posiciona el botón en la esquina superior derecha */
-    top: 10px; /* Distancia desde la parte superior */
-    right: 30px; /* Distancia desde la parte derecha */
-    cursor: pointer;
-}
-
-.close-btn:hover,
-.close-btn:focus {
-    color: #b3ea28;
-    text-decoration: none;
-    cursor: pointer;
-}
-.close-btn:hover {
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7); /* Sombra alrededor de la "X" */
-}
-
-
-
-.fotonovios{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 5% 0 5% 0;
-}
-.fotonovios img {
-    width: 300px; /* Ajusta el tamaño según lo necesario */
-    height: 300px; /* Igual que el ancho para que sea cuadrada */
-    border-radius: 8%; /* Hace que la imagen tenga forma de círculo */
-    object-fit: cover; /* Asegura que la imagen se ajuste correctamente */
-}
 
 @media (min-width: 540px){
-    .fondo1{
-        height: 700px;
-        margin: 0 5% 0 5%;
-    }
-    .fondo2{
-        height: 400px;
-    }
-    .titulo{
-        font-size: 4rem;
-    }
+  
     .ampersand {
         font-size: 2rem;
-    }
-    .nuestraboda{
-        font-size: 1.3rem;
-    }
-    .icons{
-        width: 150px;
-        height: 150px;
-    }
-    .pregalo{
-        margin: 0 10% 5% 10%;
-        font-size: 1.2rem;
-    }
-    .pdescripcion{
-        margin: 0 10% 5% 10%;
-        font-size: 1.2rem;
     }
     .margin{
         margin: 0 0 8% 0;
     }
+
     
 }
 @media (min-width: 770px){
-    .fondo1{
-        background-image: url('./assets/2.jpg');
-        margin: 0 3% 0 3%;
-        height: 700px;
-    }
-    .fondo2{
-        height: 500px;
-        margin: 10% 3% 10% 3%;
-    }
-    .titulo{
-        font-size: 5rem;
-        margin-top: 0 !important;
-        margin-bottom: 13% !important;
-    }
+ 
+
     .confirma{
         font-size: 2rem;
     }
@@ -256,9 +173,7 @@ body {
     .ampersand {
         font-size: 2rem;
     }
-    .nuestraboda{
-        font-size: 1.3rem;
-    }
+   
     .container2{
         display: flex;
         flex-direction: row;
@@ -266,16 +181,7 @@ body {
         align-items: center;
         height: 30%;
     }
-    .icons{
-        width: 150px;
-        height: 150px;
-    }
-    .pregalo{
-        margin: 0 10% 5% 10%;
-    }
-    .pdescripcion{
-        margin: 0 10% 5% 10%;
-    }
+
     .margin{
         margin: 0 0 10% 0;
     }
@@ -285,20 +191,7 @@ body {
 }
 
 @media (min-width: 1000px){
-    .fondo1{
-        background-image: url('./assets/2.jpg');
-        margin: 0 15% 0% 15%;
-        height: 600px;
-    }
-    .fondo2{
-        height: 600px;
-        margin: 8% 10% 8% 10%;
-    }
-    .titulo{
-        font-size: 5rem;
-        margin-top: 13% !important;
-        margin-bottom: 3% !important;
-    }
+  
     .confirma{
         font-size: 2.5rem;
     }
@@ -309,54 +202,279 @@ body {
     .ampersand {
         font-size: 2rem;
     }
-    .nuestraboda{
-        font-size: 1.3rem;
-    }
-    .icons{
-        width: 200px;
-        height: 200px;
-    }
-    .pregalo{
-        margin: 0 20% 5% 20%;
-        font-size: 2rem;
-    }
-    .pdescripcion{
-        margin: 0 20% 0% 20%;
-        font-size: 2rem;
-        padding: 5% 2% 5% 2%;
-    }
+    
     .margin{
         margin: 0 0 5% 0;
     }
-    .modal-content {
-        padding: 8% 2% 8% 2%;
-    }
-    .fotonovios img {
-        width: 500px; /* Ajusta el tamaño según lo necesario */
-        height: 500px; /* Igual que el ancho para que sea cuadrada */
-    }
-    .fotonovios{
-        margin-top: 2%;
-    }
 }
-
-.boton-verde {
-    background-color: rgb(119, 156, 108); /* Verde base */
-    color: white; /* Texto en blanco */
-    border: rgb(34, 79, 21); /* Sin borde */
-    border-radius: 12px; /* Bordes redondeados */
-    padding: 10px 20px; /* Espaciado interno */
-    font-size: 16px; /* Tamaño de la fuente */
-    cursor: pointer; /* Cursor de mano */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para la elevación */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Animaciones suaves */
-  }
-  
-  .boton-verde:hover {
-    background-color: rgb(62, 100, 51); /* Verde más claro en hover */
-    transform: translateY(-2px); /* Pequeño efecto de elevación */
-  }
 
   .pregalo{
     text-align: center;
   }
+
+
+  .confirma-asistencia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    margin: 10px 0 50px;
+    padding: 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    color: rgb(19, 19, 67);
+  }
+
+  .confirma-asistencia:hover {
+    transform: scale(1.05);
+  }
+  
+  .confirma-asistencia-texto{
+    border: none;
+    font-weight: bolder;
+    color: rgb(19, 19, 67);
+  }
+
+.iframe-container {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+@media (min-width: 768px) {
+    .container {
+      max-width: 600px !important;
+    }
+  }
+  
+  .btn-primary {
+    background-color: #19284c;
+    border-color: #19284c;
+  }
+  
+  .flex-equal-width {
+    flex: 1 1 0;
+  }
+  
+  
+  .carousel-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    background: 
+      linear-gradient(to top, #FFF, rgba(255, 255, 255, 0.1) 40%),
+      linear-gradient(to right,#FFF, rgba(255, 255, 255, 0) 1%, rgba(255, 255, 255, 0) 99%, #FFF);
+  }
+  
+  .carousel-item img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .carousel-item--top img {
+    top: 100%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .carousel-caption {
+    z-index: 1;
+  }
+  
+  @media (min-width: 768px) {
+    .carousel-item {
+      height: 300px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .carousel-item {
+      height: 500px;
+    }
+  }
+  
+  .content-border {
+    position: relative;
+  }
+  
+  .content-border::before,
+  .content-border::after {
+    content: '';
+    position: absolute;
+    background: url('./assets/gold-leaf-line.png');
+    background-position: top left;
+    background-repeat: repeat-y;
+    background-size: 50px 86px;
+    left: -10px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .content-border::after {
+    transform: scaleX(-1);
+    left: 10px;
+  }
+  
+
+  .date-container {
+    max-width: 250px;
+    margin: auto;
+  }
+  
+  .date-container__text {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 8px 0;
+  }
+  
+  .date-container__text--border::before,
+  .date-container__text--border::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    background-color: #fff;
+  }
+  
+  .date-container__text--border::before {
+    top: 0;
+  }
+  
+  .date-container__text--border::after {
+    bottom: 0;
+  }
+  
+  .date-container__standout {
+    display: flex;
+    font-size: 60px;
+    line-height: 0.5;
+    align-items: center;
+  }
+  
+  .countdown {
+    border-radius: 16px;
+    max-width: 350px;
+    margin: auto;
+    font-weight: 700;
+  }
+  
+  .countdown-item {
+    position: relative;
+    display: flex;
+    width: 70px;
+    height: 70px;
+    margin: 10px 4px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: linear-gradient(316deg, #e7cf9a, #cabea6 50%, #f4d792, #cba346);
+    box-shadow: 0 0 20px -6px rgba(255, 255, 255, 0.5);
+    background-size: 200%;
+    background-position-x: 0%;
+    animation: blink 20s ease-in-out 2s infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      background-position-x: 200%;
+    }
+    2%, 100% {
+      background-position-x: 0%
+    }
+  }
+  
+  .bubbles-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: url(./assets/bubbles-bg.svg);
+    background-size: auto 200%;
+    filter: blur(3px);
+    opacity: 0.5;
+    animation: bubble 40s linear infinite, opacity-test 2s linear infinite alternate-reverse;
+    pointer-events: none;
+  }
+  
+  .bubbles-bg::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: url(./assets/bubbles-bg.svg);
+    background-size: auto 200%;
+    opacity: 0.3;
+    filter: blur(3px);
+    animation: bubble 20s linear infinite;
+    pointer-events: none;
+  }
+  
+  @keyframes section-fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes opacity-test {
+    from {
+      opacity: 0.5;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes bubble {
+    from {
+      background-position-y: 0%;
+    }
+    to {
+      background-position-y: 200%;
+    }
+  }
+
+.marginnnn {
+    margin-right: 40px;
+}
+
+.linea-divisoria{
+    display: block;
+    width: 70%; /* Puedes ajustar esto según lo larga que quieras la línea */
+    border-bottom: 2px solid white;
+}
+
+.linea-divisoria-container{
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Que ocupe todo el ancho del contenedor padre */
+    margin: 2rem 0; /* Espaciado arriba y abajo opcional */
+}

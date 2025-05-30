@@ -1,0 +1,362 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+/* 
+.container{
+ 
+    height: 5%;
+    margin: 5% 10% 5% 10%
+}
+.containerNames{
+    font-family: "Pacifico";
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     
+} */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40%;
+}
+
+.fondo1{
+    background-image: url('./assets/901684588b9113791451deaae51bea24.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+}
+
+.fondo2{
+    background-image: url('./assets/e4d56a2618ad1278d69d4aee0d152c16.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    margin: 10% 0 10% 0;
+}
+
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.titulo{
+    font-family: "Parisienne", cursive;
+    /* font-family: "Playwrite HR Lijeva", cursive; */
+    font-weight: 400;
+    font-size: 3rem;
+    color: rgb(34, 79, 21);
+    
+}
+
+.ampersand {
+    font-size: 1.8rem; /* Tamaño más pequeño para la & */
+    color: rgb(34, 79, 21); /* Color opcional (más claro, por ejemplo) */
+}
+
+.nuestraboda{
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgb(34, 79, 21);
+    /* font-style: italic; */
+}
+
+.confirma{
+    text-align: center;
+    font-family: "Montserrat";
+    font-weight: 500;
+    margin: 12% 8% 4% 8%;
+    color: rgb(34, 79, 21);
+    font-size: 1.3rem;
+}
+.confirmap{
+    color: rgb(34, 79, 21);
+    font-family: "Montserrat";
+    font-weight: 300;
+    margin: 0 0 6% 0;
+    font-size: 1rem;
+
+}
+.divCivilFiesta{
+    margin-top: 8%;
+    font-family: "Montserrat";
+    font-weight: 500;
+}
+.titleCivilFiesta{
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: rgb(34, 79, 21);
+}
+.pCivilFiesta{
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 1rem;
+    color: rgb(34, 79, 21);
+}
+.icons{
+    width: 120px;
+    height: 120px;
+}
+.pregalo{
+    font-family: "Montserrat";
+    font-weight: 300;
+    color: rgb(34, 79, 21);
+    margin: 0 8% 5% 8%;
+}
+
+.pdescripcion{
+    font-family: "Montserrat";
+    font-weight: 300;
+    color: rgb(34, 79, 21);
+    margin: 0 8% 5% 8%;
+    padding: 10% 10% 5% 10%;
+    text-align: center;
+}
+.margin{
+    margin: 0 0 15% 0;
+}
+/* Estilo del modal */
+.modal {
+    display: none; /* El modal está oculto inicialmente */
+    position: fixed; /* Fijo en la pantalla */
+    z-index: 1; /* Asegura que el modal esté encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Si el contenido es grande, permite desplazarse */
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro transparente */
+}
+
+/* Contenido del modal */
+.modal-content {
+    background-image: url("./assets/banco.jpg");
+    margin: 15% auto;
+    padding: 22% 2% 20% 2%;
+    border: 1px solid #888;
+    width: 80%; /* Puedes ajustar el tamaño según tus necesidades */
+    max-width: 500px;
+    text-align: center;
+    position: relative; /* Necesario para que la "X" esté posicionada correctamente */
+}
+
+/* Botón para cerrar el modal */
+.close-btn {
+    color: #cd8e36;
+    font-size: 70px;
+    /* font-weight: bold; */
+    position: absolute; /* Posiciona el botón en la esquina superior derecha */
+    top: 10px; /* Distancia desde la parte superior */
+    right: 30px; /* Distancia desde la parte derecha */
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #b3ea28;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close-btn:hover {
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7); /* Sombra alrededor de la "X" */
+}
+
+
+
+.fotonovios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0 5% 0;
+}
+.fotonovios img {
+    width: 300px; /* Ajusta el tamaño según lo necesario */
+    height: 300px; /* Igual que el ancho para que sea cuadrada */
+    border-radius: 8%; /* Hace que la imagen tenga forma de círculo */
+    object-fit: cover; /* Asegura que la imagen se ajuste correctamente */
+}
+
+@media (min-width: 540px){
+    .fondo1{
+        height: 700px;
+        margin: 0 5% 0 5%;
+    }
+    .fondo2{
+        height: 400px;
+    }
+    .titulo{
+        font-size: 4rem;
+    }
+    .ampersand {
+        font-size: 2rem;
+    }
+    .nuestraboda{
+        font-size: 1.3rem;
+    }
+    .icons{
+        width: 150px;
+        height: 150px;
+    }
+    .pregalo{
+        margin: 0 10% 5% 10%;
+        font-size: 1.2rem;
+    }
+    .pdescripcion{
+        margin: 0 10% 5% 10%;
+        font-size: 1.2rem;
+    }
+    .margin{
+        margin: 0 0 8% 0;
+    }
+    
+}
+@media (min-width: 770px){
+    .fondo1{
+        background-image: url('./assets/2.jpg');
+        margin: 0 3% 0 3%;
+        height: 700px;
+    }
+    .fondo2{
+        height: 500px;
+        margin: 10% 3% 10% 3%;
+    }
+    .titulo{
+        font-size: 5rem;
+        margin-top: 0 !important;
+        margin-bottom: 13% !important;
+    }
+    .confirma{
+        font-size: 2rem;
+    }
+    .confirmap{
+        font-size: 1.5rem
+    }
+    .ampersand {
+        font-size: 2rem;
+    }
+    .nuestraboda{
+        font-size: 1.3rem;
+    }
+    .container2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 30%;
+    }
+    .icons{
+        width: 150px;
+        height: 150px;
+    }
+    .pregalo{
+        margin: 0 10% 5% 10%;
+    }
+    .pdescripcion{
+        margin: 0 10% 5% 10%;
+    }
+    .margin{
+        margin: 0 0 10% 0;
+    }
+    .divCivilFiesta{
+        margin-top:2%;
+    }
+}
+
+@media (min-width: 1000px){
+    .fondo1{
+        background-image: url('./assets/2.jpg');
+        margin: 0 15% 0% 15%;
+        height: 600px;
+    }
+    .fondo2{
+        height: 600px;
+        margin: 8% 10% 8% 10%;
+    }
+    .titulo{
+        font-size: 5rem;
+        margin-top: 13% !important;
+        margin-bottom: 3% !important;
+    }
+    .confirma{
+        font-size: 2.5rem;
+    }
+    .confirmap{
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+    .ampersand {
+        font-size: 2rem;
+    }
+    .nuestraboda{
+        font-size: 1.3rem;
+    }
+    .icons{
+        width: 200px;
+        height: 200px;
+    }
+    .pregalo{
+        margin: 0 20% 5% 20%;
+        font-size: 2rem;
+    }
+    .pdescripcion{
+        margin: 0 20% 0% 20%;
+        font-size: 2rem;
+        padding: 5% 2% 5% 2%;
+    }
+    .margin{
+        margin: 0 0 5% 0;
+    }
+    .modal-content {
+        padding: 8% 2% 8% 2%;
+    }
+    .fotonovios img {
+        width: 500px; /* Ajusta el tamaño según lo necesario */
+        height: 500px; /* Igual que el ancho para que sea cuadrada */
+    }
+    .fotonovios{
+        margin-top: 2%;
+    }
+}
+
+.boton-verde {
+    background-color: rgb(119, 156, 108); /* Verde base */
+    color: white; /* Texto en blanco */
+    border: rgb(34, 79, 21); /* Sin borde */
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cursor de mano */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para la elevación */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animaciones suaves */
+  }
+  
+  .boton-verde:hover {
+    background-color: rgb(62, 100, 51); /* Verde más claro en hover */
+    transform: translateY(-2px); /* Pequeño efecto de elevación */
+  }
+
+  .pregalo{
+    text-align: center;
+  }

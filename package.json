@@ -1,8 +1,10 @@
 {
  "scripts": {
-  "build": "mkdir -p dist && cp -r public/* dist && cp -r src dist/src"
-  },
+  "build": "mkdir -p dist && cp -r public/* dist && cp -r src dist/src",
+  "start": "npm run build && live-server dist"
+ },
  "dependencies": {
-  "aos": "^2.3.4"
-  }
+  "aos": "^2.3.4",
+  "live-server": "^1.2.2"
+ }
 }

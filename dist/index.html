@@ -5,69 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Parkinsans:wght@300..800&display=swap&family=Sevillana&display=swap&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
-    <title>💍Casamiento Mar y Eze</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Pacifico&family=Parisienne&display=swap" rel="stylesheet">
+    <title>💍 Casamiento Mar y Eze</title>
     <link rel="stylesheet" href="../src/index.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <section class="container fondo1">
+    <section class="container">
     
         <div class="presentacion">
             <h1 class="titulo">Marina <span class="ampersand"><br>&<br></span>Ezequiel</h1>
-            <h2 class="nuestraboda">Nuestra boda ♥</h2>
         </div>
         
         
     </section>
+    
     <section class="container2">
-        <div style="text-align: center;" class="divCivilFiesta" data-aos="zoom-in-right" data-aos-duration="1000">
-            <img src="../src/assets/civilicon.png" alt="Icono Civil" class="icons">
-            <h3 class="titleCivilFiesta">El civil</h3>
-            <p class="pCivilFiesta">Fecha y hora a confirmar</p>
-            <a href="https://www.google.com/maps/place/Delegación+Registro+Provincial+de+las+Personas+-+Centralización+Defensa+de+La+Plata/@-34.9141332,-57.937839,17z" target="_blank" style="text-decoration: none;">
-                <button class="boton-verde">VER MAPA</button>
-            </a>
-              
-        </div>
-
+        
         <div style="text-align: center;" class="divCivilFiesta" data-aos="zoom-in-left" data-aos-duration="1000">
-            <img src="../src/assets/partyicon.png" alt="Icono Fiesta" class="icons">
+            <img src='../src/assets/rosadelosvientos.png' alt="Rosa de los vientos" class="icons">
             <h3 class="titleCivilFiesta">La fiesta</h3>
-            <p class="pCivilFiesta">8 de Marzo de 2025</p>
-            <p class="pCivilFiesta">18 hs</p>
-            <p class="pCivilFiesta">491 esq 132</p>
-            <a href="https://www.google.com/maps/place/Calle+132+%26+Calle+491,+Gonnet,+Provincia+de+Buenos+Aires/@-34.8984212,-58.0342018,15z" target="_blank" style="text-decoration: none;">
-                <button class="boton-verde">VER MAPA</button>
-            </a>
+            <p class="pCivilFiesta">5 de Julio de 2025</p>
+            <p class="pCivilFiesta">19:00 hs</p>
+            <p class="pCivilFiesta">Club De Veleros San Isidro</p>
+            <div class="iframe-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.9098159705836!2d-58.50618970000001!3d-34.4544371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb03cd8914271%3A0xfea9e3e7ec9f4f5a!2sClub%20De%20Veleros%20San%20Isidro!5e0!3m2!1ses-419!2sar!4v1748620048446!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
 
     </section>
-    <section class="container fondo2">
-        <h3 class="confirma">CONFIRMA TU ASISTENCIA A LA FIESTA</h3>
-        <p class="confirmap">Antes del 08/02</p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdkMQh6VxNhya-X_8-rVG1cKOKPD9HQoQU4tP_2zphX-yWHFQ/viewform?embedded=true" target="_blank" style="text-decoration: none;">
-            <button class="boton-verde">ACÁ</button>
+    <section class="container">
+        <h3 class="confirma">CONFIRMA TU ASISTENCIA</h3>
+        <a href="https://wa.me/5491133771899?text=Nos%20vemos%20en%20la%20fiesta!" class="whatsapp-button" target="_blank" rel="noopener noreferrer">
+            <button class="boton-verde" aria-label="Confirmar asistencia por WhatsApp">ACÁ</button>
         </a>
     </section>
-    <section class="container margin" data-aos="zoom-in" data-aos-duration="1000">
-        <img src="../src/assets/gifticon.png" alt="Icono Regalo" class="icons">
-        <p class="pregalo">El mejor regalo para nosotros es tu presencia, pero si queres hacernos un regalo más, podes hacer click en el siguiente botón</p>
-        <button class="boton-verde" id="openModalBtn">VER INFORMACIÓN</button>
-    </section>
-
-    <!-- Popup Modal -->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" id="closeModalBtn">&times;</span>
-            <h2>Datos bancarios</h2>
-            <p><strong>Banco:</strong> Banco XYZ</p>
-            <p><strong>Cuenta:</strong> 1234567890</p>
-            <p><strong>CBU:</strong> 0000001234567890123456</p>
-            <p><strong>Alias:</strong> alias@banco.xyz</p>
-            
-        </div>
-    </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -76,13 +48,15 @@
     <script>
         // El código JavaScript para desactivar la animación de AOS
         function handleAnimation() {
-            const divCivilFiesta = document.querySelectorAll('.divCivilFiesta');
+            const divs = document.querySelectorAll('.divCivilFiesta');
             
+            divs.forEach(div => {
             if (window.innerWidth >= 1000) {
-                divCivilFiesta.removeAttribute('data-aos'); // Desactiva la animación
+                div.removeAttribute('data-aos');
             } else {
-                divCivilFiesta.setAttribute('data-aos', 'zoom-in-left'); // Activa la animación
+                div.setAttribute('data-aos', 'zoom-in-left');
             }
+    });
         }
     
         window.addEventListener('resize', handleAnimation); // Cambiar cuando se redimensiona la ventana

@@ -1,25 +1,23 @@
-// Obtener el modal
-const modal = document.getElementById("modal");
+const countDownDate = new Date("Jul 5, 2025 19:00:00").getTime();
 
-// Obtener el botón que abre el modal
-const openModalBtn = document.getElementById("openModalBtn");
+function setCountDown() {
+  const now = new Date().getTime();
+  const timeleft = countDownDate - now;
 
-// Obtener el botón que cierra el modal
-const closeModalBtn = document.getElementById("closeModalBtn");
+  if (timeleft < 0) {
+    clearInterval(intervalID);
+    return;
+  }
 
-// Cuando el usuario haga clic en el botón "VER INFORMACIÓN", abrir el modal
-openModalBtn.onclick = function() {
-    modal.style.display = "block";
+  const days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+
+  document.getElementById('cd-days').textContent = days;
+  document.getElementById('cd-hrs').textContent = hours;
+  document.getElementById('cd-min').textContent = minutes;
+  document.getElementById('cd-sec').textContent = seconds;
 }
 
-// Cuando el usuario haga clic en el botón de cerrar (x), cerrar el modal
-closeModalBtn.onclick = function() {
-    modal.style.display = "none";
-}
-
-// Cuando el usuario haga clic fuera del modal, cerrarlo
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+const intervalID = setInterval(setCountDown, 1000);
